@@ -1,0 +1,356 @@
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+body, html {
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
+    background: #212020;
+    color: #eaeaea;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+body {
+    padding: 0 50px;
+}
+.container {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    padding: 80px 0;
+}
+.section-create {
+    display: block;
+    text-align: left;
+}
+.section-create .content-title {
+    margin: 0 0 50px;
+    width: auto;
+    text-align: center;
+    display: block;
+}
+.section-create .content-burger {
+    display: inline-flex;
+}
+.section-create .title-block {
+    display: inline-flex;
+}
+.section-create .content-title svg {
+    margin: 0 40px 0 0;
+    padding: 20px;
+    background: #243746;
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+    fill: #EC4F1B;
+}
+.section-create .content-title h1 {
+    margin: 0;
+    font-size: 70px;
+    line-height: 0.9;
+    text-align: left;
+}
+.section-create .content-title span {
+    padding: 15px 0 0;
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.2;
+    display: block;
+}
+.section-create .content-burger .content-left,
+.section-create .content-burger .content-right {
+    width: 50%;
+}
+.section-create .content-burger  .content-left img {
+    margin: 0 auto;
+    height: 1000px;
+    display: block;
+}
+.img-cart {
+    height: 80px;
+    width: auto;
+}
+.section-create .content-burger .content-right .titleBlock {
+    margin-top: 50px;
+}
+.section-create .content-burger .content-right .titleBlock .content {
+    display: inline-flex;
+}
+.section-create .content-burger .content-right img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.section-create .content-burger .content-right span {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.section-create .content-burger .content-right select {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+/* CHECKBOXES */
+.container-checkbox {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+hr {
+    margin: 10px 0;
+    border: 2px dotted #FFFFFF;
+}
+.wrapper-chk {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin: 0 10px 20px 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 280px;
+}
+.wrapper-chk input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.wrapper-chk:hover input ~ .checkmark,
+.wrapper-chk input:checked ~ .checkmark {
+    background-color: #EC4F1B;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.wrapper-chk input:checked ~ .checkmark:after {
+    display: block;
+}
+.wrapper-chk .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid #243746;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+/* BUTTON */
+button,
+a {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 20px 40px;
+    background: none;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover,
+a:hover {
+    background: #EC4F1B;
+    border: 1px solid #EC4F1B;
+    color: #eaeaea;
+}
+
+
+
+
+
+/* CART */
+#tblShoppingCart {
+    margin: 0 auto;
+    width: 100%;
+}
+#tblShoppingCart th,
+#tblShoppingCart td {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 25px;
+}
+#tblShoppingCart th {
+    border-top: 1px solid #FFFFFF;
+    font-size: 20px;
+}
+#tblShoppingCart th:first-child,
+#tblShoppingCart td:first-child {
+    border-left: 1px solid #FFFFFF;
+}
+#tblShoppingCart th:last-child,
+#tblShoppingCart td:last-child {
+    border-right: 1px solid #FFFFFF;
+}
+#tblShoppingCart td img {
+    display: block;
+    margin: 0 auto;
+}
+#tblShoppingCart .nobotborder td {
+    border: none;
+    padding: 20px 25px 0;
+}
+#tblShoppingCart .nobotborder h1 {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 30px;
+}
+#tblShoppingCart .lastrow {
+    border: none!important;
+    text-align: center;
+    padding: 40px 0;
+}
+.btnDelete {
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    margin: 0;
+}
+.btnDelete:hover {
+    background-color: #C80000;
+    border: 1px solid #C80000;
+    color: #f0f0f0;
+}
+.btnBlock {
+    width: 100%;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+.btnCart {
+    width: 50%;
+    margin: 0;
+}
+.btnCart:disabled {
+    cursor: not-allowed;
+    background: #243746;
+    color: #212020;
+    border: 1px solid #243746;
+}
+
+.txtright {
+    text-align: right;
+}
+.txtQuantity {
+    padding: 8px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.textCenter {
+    text-align: center;
+}
+.fullwidth {
+    width: 100%!important;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1670px) {
+    .section-create .content-burger  .content-left img {
+        height: 950px;
+    }
+}
+@media only screen and (max-width: 1550px) {
+    .section-create .content-burger {
+        display: block;
+    }
+    .section-create .content-burger .content-left,
+    .section-create .content-burger .content-right {
+        display: block;
+        width: 100%;
+    }
+    .section-create .content-burger  .content-left img {
+        height: 500px;
+    }
+
+    .section-create .content-burger .content-right button {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .section-create .content-title svg {
+        height: 200px;
+        width: 200px;
+    }
+    .section-create .content-title h1 {
+        font-size: 50px;
+        line-height: 0.9;
+    }  
+    .section-create .content-title span {
+        font-size: 19px;
+    } 
+    .section-create .content-burger .content-right span {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .section-create .content-title svg {
+        height: 160px;
+        width: 160px;
+        margin-right: 20px;
+    }
+    .section-create .content-title h1 {
+        font-size: 40px;
+    }
+    .section-create .content-burger .content-right span {
+        font-size: 30px;
+    }
+    .section-create .content-title span {
+        font-size: 15px;
+    }
+}
